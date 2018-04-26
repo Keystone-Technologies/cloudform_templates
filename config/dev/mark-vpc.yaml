@@ -1,0 +1,12 @@
+template_path: templates/mark-vpc.json
+parameters:
+    EnvironmentName: MarkTest
+    VpcCIDR: 10.109.0.0/16
+    PublicSubnetCIDR: 10.109.2.0/24
+    CitrixPublicSubnetCIDR: 10.109.0.0/24
+    TermPrivateSubnetCIDR: 10.109.1.0/24
+    ServerPrivateSubnetCIDR: 10.109.3.0/24
+    DomainName: ec2.internal
+    DomainNameServers:
+      - AmazonProvidedDNS
+    AvailabilityZone: us-east-2a
